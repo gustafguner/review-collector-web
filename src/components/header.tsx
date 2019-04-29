@@ -7,7 +7,7 @@ import Image from './image';
 const Wrapper = styled.div`
   width: 100%;
   height: 90px;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -60,7 +60,6 @@ const Header: React.FC<{}> = () => (
         </Link>
       </StyledContainer>
     </Wrapper>
-    <Spacing />
   </>
 );
 

@@ -8,6 +8,12 @@ import AddToSlack from '../components/add-to-slack';
 
 const Landing = styled.div`
   padding: 6rem 0;
+  @media (max-width: 950px) {
+    padding: 2.5rem 0;
+  }
+  @media (max-width: 500px) {
+    padding: 1.5rem 0;
+  }
 `;
 
 const StyledContainer = styled(Container)`
@@ -18,6 +24,7 @@ const StyledContainer = styled(Container)`
 const LandingColumns = styled.div`
   margin: 0 -2rem;
   display: flex;
+  flex-flow: row wrap;
 `;
 
 const LandingColumn = styled.div`
@@ -25,13 +32,23 @@ const LandingColumn = styled.div`
   margin: 0 2rem;
   display: flex;
   flex-flow: column;
+  flex-shrink: 0;
   justify-content: center;
+  @media (max-width: 950px) {
+    width: calc(100% - 4rem);
+    &:first-child {
+      margin-bottom: 3rem;
+    }
+  }
 `;
 
 const Headline = styled.h2`
   font-size: 3rem;
   color: ${colors.WHITE};
   margin: 0 0 2rem 0;
+  @media (max-width: 1100px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const SlackMessage = styled.div`
@@ -39,6 +56,10 @@ const SlackMessage = styled.div`
   background: ${colors.WHITE};
   border-radius: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  @media (max-width: 950px) {
+    padding: 0.6rem 0.5rem;
+  }
 `;
 
 const IndexPage = () => (
