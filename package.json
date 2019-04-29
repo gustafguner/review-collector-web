@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.25",
     "gatsby-image": "^2.0.39",
+    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -17,12 +19,14 @@
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.18",
     "prop-types": "^15.7.2",
+    "query-string": "^6.4.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
+    "@types/query-string": "^6.3.0",
     "@types/react": "^16.8.14",
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
