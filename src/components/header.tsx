@@ -6,7 +6,7 @@ import Image from './image';
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 90px;
+  padding: 2rem 0;
   position: relative;
   top: 0;
   left: 0;
@@ -39,11 +39,6 @@ const Name = styled.div`
   text-decoration: none;
   font-weight: 500;
   font-size: 1.16rem;
-`;
-
-const Spacing = styled.div`
-  width: 100%;
-  padding-bottom: 80px;
 `;
 
 const Header: React.FC<{}> = () => (

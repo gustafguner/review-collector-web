@@ -64,6 +64,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${colors.BROWN};
+    color: ${colors.WHITE};
   }
   img {
     max-width: 100%;
