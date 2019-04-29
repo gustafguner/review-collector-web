@@ -3,45 +3,78 @@ import SEO from '../components/seo';
 import Page from '../components/page';
 import Image from '../components/image';
 import styled from 'styled-components';
+import { colors, Container } from '../styles';
+import slackMessage from '../assets/images/slack-message.png';
 
-const LogoContainer = styled.div`
+const Landing = styled.div`
+  height: 440px;
   display: flex;
-  align-items: center;
+  margin: 0 -2rem;
 `;
 
-const Logo = styled.div`
-  width: 220px;
-  height: 220px;
-  margin-right: 30px;
+const StyledContainer = styled(Container)`
+  display: flex;
 `;
 
-const Container = styled.div`
+const LandingColumns = styled.div`
+  margin: 0 -2rem;
+  display: flex;
+`;
+
+const LandingColumn = styled.div`
+  width: calc(50% - 4rem);
+  margin: 0 2rem;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  padding: 40px 0;
+  justify-content: center;
+`;
+
+const Headline = styled.h2`
+  font-size: 3rem;
+  color: ${colors.WHITE};
+  margin: 0 0 2rem 0;
+`;
+
+const SlackMessage = styled.div`
+  padding: 15px;
+  background: ${colors.WHITE};
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+`;
+
+const Info = styled.div`
+  background-color: ${colors.DARK_BROW};
+  width: 100%;
+  height: 200px;
 `;
 
 const IndexPage = () => (
   <Page>
     <SEO title="Review Collector" />
-    <Container>
-      <LogoContainer>
-        <Logo>
-          <Image src="review-collector-logo.png" />
-        </Logo>
-        <h1>Review Collector</h1>
-      </LogoContainer>
+    <Landing>
+      <StyledContainer>
+        <LandingColumns>
+          <LandingColumn>
+            <Headline>Get your pull requests merged in time</Headline>
+            <a href="https://slack.com/oauth/authorize?scope=commands,bot,chat:write:bot,im:write&client_id=600818133427.600894270546">
+              <img
+                alt="Add to Slack"
+                height="40"
+                width="139"
+                src="https://platform.slack-edge.com/img/add_to_slack@2x.png"
+              />
+            </a>
+          </LandingColumn>
+          <LandingColumn>
+            <SlackMessage>
+              <img src={slackMessage} />
+            </SlackMessage>
+          </LandingColumn>
+        </LandingColumns>
+      </StyledContainer>
+    </Landing>
 
-      <a href="https://slack.com/oauth/authorize?scope=commands,bot,chat:write:bot,im:write&client_id=600818133427.600894270546">
-        <img
-          alt="Add to Slack"
-          height="40"
-          width="139"
-          src="https://platform.slack-edge.com/img/add_to_slack@2x.png"
-        />
-      </a>
-    </Container>
+    <Info />
   </Page>
 );
 

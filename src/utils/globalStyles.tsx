@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { fontFiles } from '../styles';
+import { colors, fontFiles } from '../styles';
 
 interface Font {
   url: string;
@@ -63,7 +63,7 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
-    background: #fdfaeb;
+    background: ${colors.BROWN};
   }
   img {
     max-width: 100%;
