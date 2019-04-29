@@ -14,7 +14,7 @@ const OnboardingGitHub = ({ ...props }) => {
       <Container>
         <h1>Step 2: GitHub Authentication</h1>
         <AddToGitHub
-          href={`https://github.com/login/oauth/authorize?client_id=9dbe9ded7f285094d396&scope=repo%20scope&redirect_uri=https://review-collector-bot.herokuapp.com/github/oauth2/redirect?id=${id}`}
+          href={`https://github.com/login/oauth/authorize?client_id=9dbe9ded7f285094d396&redirect_uri=https://review-collector-bot.herokuapp.com/github/oauth2/redirect?id=${id}`}
         />
       </Container>
     </Page>
