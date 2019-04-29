@@ -5,15 +5,15 @@ import Image from '../components/image';
 import styled from 'styled-components';
 import { colors, Container } from '../styles';
 import slackMessage from '../assets/images/slack-message.png';
+import AddToSlack from '../components/add-to-slack';
 
 const Landing = styled.div`
   height: 440px;
-  display: flex;
-  margin: 0 -2rem;
 `;
 
 const StyledContainer = styled(Container)`
   display: flex;
+  height: 100%;
 `;
 
 const LandingColumns = styled.div`
@@ -55,15 +55,8 @@ const IndexPage = () => (
       <StyledContainer>
         <LandingColumns>
           <LandingColumn>
-            <Headline>Get your pull requests merged in time</Headline>
-            <a href="https://slack.com/oauth/authorize?scope=commands,bot,chat:write:bot,im:write&client_id=600818133427.600894270546">
-              <img
-                alt="Add to Slack"
-                height="40"
-                width="139"
-                src="https://platform.slack-edge.com/img/add_to_slack@2x.png"
-              />
-            </a>
+            <Headline>Get your pull requests merged in no time</Headline>
+            <AddToSlack href="https://slack.com/oauth/authorize?scope=commands,bot,chat:write:bot,im:write&client_id=600818133427.600894270546" />
           </LandingColumn>
           <LandingColumn>
             <SlackMessage>
