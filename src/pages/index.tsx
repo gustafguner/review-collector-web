@@ -1,7 +1,6 @@
 import * as React from 'react';
 import SEO from '../components/seo';
 import Page from '../components/page';
-import Image from '../components/image';
 import styled from 'styled-components';
 import { colors, Container } from '../styles';
 import slackMessage from '../assets/images/slack-message.png';

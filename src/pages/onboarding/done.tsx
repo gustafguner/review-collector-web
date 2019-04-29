@@ -1,6 +1,4 @@
 import * as React from 'react';
-import * as qs from 'query-string';
-import { Link } from 'gatsby';
 import SEO from '../../components/seo';
 
 const OnboardingGitHub = ({ ...props }) => {
