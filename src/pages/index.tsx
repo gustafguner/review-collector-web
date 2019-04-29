@@ -8,7 +8,7 @@ import slackMessage from '../assets/images/slack-message.png';
 import AddToSlack from '../components/add-to-slack';
 
 const Landing = styled.div`
-  height: 440px;
+  padding: 6rem 0;
 `;
 
 const StyledContainer = styled(Container)`
@@ -36,16 +36,10 @@ const Headline = styled.h2`
 `;
 
 const SlackMessage = styled.div`
-  padding: 15px;
+  padding: 1.2rem 1rem;
   background: ${colors.WHITE};
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-`;
-
-const Info = styled.div`
-  background-color: ${colors.DARK_BROW};
-  width: 100%;
-  height: 200px;
 `;
 
 const IndexPage = () => (
@@ -66,8 +60,6 @@ const IndexPage = () => (
         </LandingColumns>
       </StyledContainer>
     </Landing>
-
-    <Info />
   </Page>
 );
 
