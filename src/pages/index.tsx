@@ -57,6 +57,7 @@ const SlackMessage = styled.div`
   border-radius: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
+  width: 100%;
   @media (max-width: 950px) {
     padding: 0.6rem 0.5rem;
   }
